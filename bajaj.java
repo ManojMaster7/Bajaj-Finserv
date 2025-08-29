@@ -23,9 +23,9 @@ public class JavaQualifierApplication implements CommandLineRunner {
         // Step 1: Generate Webhook
         String url = "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA";
         Map<String, String> body = new HashMap<>();
-        body.put("name", "Your Name Here");
+        body.put("name", "G Manoj");
         body.put("regNo", "22BCE3839");
-        body.put("email", "your_email@vitstudent.ac.in");
+        body.put("email", "manoj.g@vitstudent.ac.in");
 
         ResponseEntity<Map> response = restTemplate.postForEntity(url, body, Map.class);
 
